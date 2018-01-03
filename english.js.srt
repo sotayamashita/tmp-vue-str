@@ -168,123 +168,125 @@ Vue インスタンスを作成します＿
 
 38
 00:01:33,673 --> 00:01:36,032
-el は element の略です
+el は element の略です。
 
 39
 00:01:36,032 --> 00:01:39,505
-We'll also move our data inside an object
+data をオブジェクト内に移動します。
 
 40
 00:01:39,505 --> 00:01:41,993
 and change X into an expression
+そして X を式に変更します＿
 
 41
 00:01:41,993 --> 00:01:44,544
-with the double curly braces.
+２重の中括弧で囲んだ。
 
 42
 00:01:44,544 --> 00:01:46,945
-As you can see, it works.
+見て分かる通り、動きます。
 
 43
 00:01:46,945 --> 00:01:50,695
-Pretty cool, but the magic of
-Vue starts when data changes.
+かっこいいですよね。しかし Vue の
+マジックは data が変更したからが本番です。
 
 44
 00:01:50,695 --> 00:01:51,975
-If we jump into the console,
+例えば console 画面を開いて
 
 45
 00:01:51,975 --> 00:01:54,735
-we change the value of our product.
+product の値を変更してみます。
 
 46
 00:01:54,735 --> 00:01:57,324
-Notice that as soon as the
-value of product changed,
+product の値の変更
+を受け取るとすぐに＿
 
 47
 00:01:57,324 --> 00:01:59,953
-Vue automatically updated our HTML.
+Vue は自動的に HTML を更新しました。
 
 48
 00:01:59,953 --> 00:02:01,745
-This is because Vue is reactive,
+これは Vue がれアクティブだからです。
 
 49
 00:02:01,745 --> 00:02:03,273
 meaning that when our data changes,
+つまり、データが変更されると＿
 
 50
 00:02:03,273 --> 00:02:05,193
-Vue takes care of updating all the places
+Vue はその変更すべてを監視しています。
 
 51
 00:02:05,193 --> 00:02:07,255
-we're using it in our web page.
+私たちが使っているウェブページの中で。
 
 52
 00:02:07,255 --> 00:02:10,305
-This works with any kind
-of data, not just strings.
+文字列だけに限らず
+様々な種類のデータで可能です。
 
 53
 00:02:10,305 --> 00:02:11,604
-So instead of a single product,
+それでは、ひとつの商品ではなく＿
 
 54
 00:02:11,604 --> 00:02:14,604
-let's use an array of products.
+商品を配列にしてみましょう。
 
 55
 00:02:14,604 --> 00:02:17,865
-Then we'll update our
-H2 to an unordered list,
+h2 タグを ul タグに
+変更してみましょう。
 
 56
 00:02:17,865 --> 00:02:20,535
-and create a new list item
-for each product in the array
+そして、配列のそれぞれの商品ごとに
+新たな li アイテムを作成します。
 
 57
 00:02:20,535 --> 00:02:22,618
-using Vue's v-for directive.
+Vue の v-for 命令を使って。
 
 58
 00:02:24,353 --> 00:02:26,615
-This way, each product
-gets its own list item
+この方法では、それぞれの商品は
+それ自身の li アイテムを作成します。
 
 59
 00:02:26,615 --> 00:02:28,495
-as you see here.
+ご覧の通り。
 
 60
 00:02:28,495 --> 00:02:30,352
-This is still a little contrived though.
+ただこれだとウソっぽいですよね。
 
 61
 00:02:30,352 --> 00:02:32,312
-So let's start with our list empty
+なので、まずは空のリストを作ります。
 
 62
 00:02:32,312 --> 00:02:34,815
-and fetch our products from an actual API
+そして商品を実際の API を使って取得します。
 
 63
 00:02:34,815 --> 00:02:37,433
-which could be coming
-from a database somewhere.
+値はどこか他のデータベースで
+定義されたものが返ってきます。
 
 64
 00:02:37,433 --> 00:02:38,863
-When our app is created,
+アプリケーションが作られると、
 
 65
 00:02:38,863 --> 00:02:41,866
-we'll fetch the latest
-products from this API.
+この API から
+最新の商品一覧を取得します。
 
 66
 00:02:41,866 --> 00:02:43,199
