@@ -133,42 +133,42 @@ Vue's 作成者 Evan You
 
 30
 00:01:13,571 --> 00:01:15,301
-We won't be teaching you how to use Vue,
+Vue をどうやって使うかについてではなく＿
 
 31
 00:01:15,301 --> 00:01:16,981
-but we'll introduce a couple key concepts
+いくつかの重要なコンセプトについて紹介します
 
 32
 00:01:16,981 --> 00:01:19,460
-that make Vue so useful.
+Vue の何が便利なのかについて。
 
 33
 00:01:19,460 --> 00:01:21,200
-As with many JavaScript applications,
+多くの JavaScript のアプリケーションと同様に_
 
 34
 00:01:21,200 --> 00:01:24,272
-we start from the need to
-display data on to our web page.
+ウェブページにデータを表示する
+ところから始めましょう。
 
 35
 00:01:24,272 --> 00:01:26,591
-With Vue, it starts out really simple.
+Vue で簡単なところから始めましょう。
 
 36
 00:01:26,591 --> 00:01:29,745
-We include the Vue library,
-create a Vue instance,
+Vue ライブラリを追加して
+Vue インスタンスを作成します＿
 
 37
 00:01:29,745 --> 00:01:33,673
-and plug into our root
-element with the ID of app.
+そして、app という ID を持つ
+ルート要素と結びつけます。
 
 38
 00:01:33,673 --> 00:01:36,032
-E L stands for element.
+el は element の略です
 
 39
 00:01:36,032 --> 00:01:39,505
