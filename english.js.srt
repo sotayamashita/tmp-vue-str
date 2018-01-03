@@ -1,137 +1,135 @@
 1
 00:00:00,000 --> 00:00:02,418
-- Over the last 10 years
-our web pages have become
+- 過去 10 年にわたって
+私たちのウェブサイトは＿
 
 2
 00:00:02,418 --> 00:00:05,600
-more dynamic and powerful
-thanks to JavaScript.
+JavaScript のあかげで
+よりダイナミックでパワフルになりました。
 
 3
 00:00:05,600 --> 00:00:07,541
-We've moved a lot of
-code that was normally on
+たくさんのコードを移動しました
+一般的には＿
 
 4
 00:00:07,541 --> 00:00:10,120
-the server side into our browsers,
+サーバーサイドにあるものをブラウザに＿
 
 5
 00:00:10,120 --> 00:00:13,051
-leaving us with thousands
-of lines of JavaScript code
+数千にもおよぶ
+JavaScript のコードをそのままに＿
 
 6
 00:00:13,051 --> 00:00:15,691
-connecting to various HTML and CSS files
+様々な HTML や CSS とつなげました
 
 7
 00:00:15,691 --> 00:00:17,821
-with no formal organization.
+無秩序にです。
 
 8
 00:00:17,821 --> 00:00:19,781
-This is why more and
-more developers are using
+なので、多くの開発者は_
 
 9
 00:00:19,781 --> 00:00:23,948
-JavaScript frameworks like,
-Angular, React, or Vue.
+Angular、React や Vue などの
+JavaScript フレームワークを使います。
 
 10
 00:00:24,821 --> 00:00:27,829
-Vue is an approachable,
-versatile, and performant
+Vue は親しみやすく、
+万能で、効率の良い
 
 11
 00:00:27,829 --> 00:00:29,860
-JavaScript framework
-that helps you create
+JavaScript フレームワークで
+あなたを助けます＿
 
 12
 00:00:29,860 --> 00:00:33,381
-a more maintainable,
-and testable code base.
+より管理しやすく
+テストしやすいコードになるように。
 
 13
 00:00:33,381 --> 00:00:36,229
-Vue is a progressive JavaScript
-framework, which means,
+Vue はプログレッシブ
+Javascript フレームワークです。これは＿
 
 14
 00:00:36,229 --> 00:00:38,621
-if you have an existing
-server-side application,
+もしすでに
+サーバーサイドアプリケーションがある場合に
 
 15
 00:00:38,621 --> 00:00:41,627
-you can plug Vue into just
-one part of your application
+ただのアプリケーションの一部として
+Vue を使うことができます。
 
 16
 00:00:41,627 --> 00:00:44,381
-that needs a richer, more
-interactive experience.
+より豊かに相互作用的なものにするために。
 
 17
 00:00:44,381 --> 00:00:46,269
-Or, if you want to build
-more business logic
+もしくは、もしビジネスロジックを
+もっと実装したい場合に＿
 
 18
 00:00:46,269 --> 00:00:48,240
-into your frontend from the get go,
+最初からフロントエンドに追加するなら
 
 19
 00:00:48,240 --> 00:00:50,611
-Vue has the core libraries
-and the ecosystem
+Vue にはコアライブラリと
+エコシステムがあります＿
 
 20
 00:00:50,611 --> 00:00:52,421
-you'll need to scale.
+スケールをさせるための。
 
 21
 00:00:52,421 --> 00:00:53,829
-Like other frontend frameworks,
+その他のフロントエンドのフレームワーク同様に＿
 
 22
 00:00:53,829 --> 00:00:55,960
-Vue allows you to take a
-web page and split it up
+Vue ではウェブページを
+分割することができます_
 
 23
 00:00:55,960 --> 00:01:00,000
-into reusable components,
-each having its own HTML,
+再利用可能なコンポーネントに。
+それぞれが HTML、
 
 24
 00:01:00,000 --> 00:01:02,291
-CSS, and JavaScript needed to render
+CSS と JavaScriptをもちます。
+表示するための
 
 25
 00:01:02,291 --> 00:01:04,269
-that piece of the page.
+ページの一部として。
 
 26
 00:01:04,269 --> 00:01:06,260
-Next, we'll take a look
-at Vue in action by
+次に、Vue で実際に
 
 27
 00:01:06,260 --> 00:01:08,301
-building a product inventory page,
+製品の一覧ページを作成してみましょう。
 
 28
 00:01:08,301 --> 00:01:10,187
-but stay tuned to the end of the video
+ビデオの最後までぜひ見てください。
 
 29
 00:01:10,187 --> 00:01:13,571
-for a message from
-Vue's creator, Evan You.
+Vue's 作成者 Evan You
+からのメッセージあります。
 
 30
 00:01:13,571 --> 00:01:15,301
