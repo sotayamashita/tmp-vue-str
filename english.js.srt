@@ -42,7 +42,7 @@ JavaScript フレームワークを使います。
 10
 00:00:24,821 --> 00:00:27,829
 Vue は親しみやすく、
-万能で、効率の良い
+融通が効き、そして、融通が効く
 
 11
 00:00:27,829 --> 00:00:29,860
@@ -71,7 +71,7 @@ Vue を使うことができます。
 
 16
 00:00:41,627 --> 00:00:44,381
-より豊かに相互作用的なものにするために。
+よりインタラクティブな体験のために。
 
 17
 00:00:44,381 --> 00:00:46,269
@@ -128,7 +128,7 @@ CSS と JavaScriptをもちます。
 
 29
 00:01:10,187 --> 00:01:13,571
-Vue's 作成者 Evan You
+Vue's 作者 Evan You
 からのメッセージあります。
 
 30
@@ -185,7 +185,7 @@ and change X into an expression
 
 42
 00:01:44,544 --> 00:01:46,945
-見て分かる通り、動きます。
+見ての通り、動きます。
 
 43
 00:01:46,945 --> 00:01:50,695
@@ -211,7 +211,7 @@ Vue は自動的に HTML を更新しました。
 
 48
 00:01:59,953 --> 00:02:01,745
-これは Vue がれアクティブだからです。
+これは Vue がリアクティブだからです。
 
 49
 00:02:01,745 --> 00:02:03,273
@@ -290,206 +290,207 @@ Vue の v-for 命令を使って。
 
 66
 00:02:41,866 --> 00:02:43,199
-All you need to take from it is that
+ここでするべきことは
 
 67
 00:02:43,199 --> 00:02:45,063
-we're fetching our list of products
+商品リストを取得して
 
 68
 00:02:45,063 --> 00:02:46,923
-and updating them in our data.
+それらを更新することです。
 
 69
 00:02:46,923 --> 00:02:48,281
-As you can see on our web page,
+見ての通りこのウェブページは
 
 70
 00:02:48,281 --> 00:02:51,435
-each list item is showing
-the object it returned.
+それぞれの li は
+オブジェクトをそのまま表示しています
 
 71
 00:02:51,435 --> 00:02:53,474
-Well, it's not human readable yet,
+これではあまり読みやすくありませんね。
 
 72
 00:02:53,474 --> 00:02:56,265
-so let's change the way it's displayed.
+もっと見やすく変更してみましょう。
 
 73
 00:02:56,265 --> 00:02:59,643
-We'll print out quantity and name.
+商品の量と名前を表示します。
 
 74
 00:02:59,643 --> 00:03:02,265
-And there it is, printing out nicely.
+これでだいぶ読みやすくなりましたね。
 
 75
 00:03:02,265 --> 00:03:03,563
-We might want to call attention to the
+おそらく気づきたいでしょう。
 
 76
 00:03:03,563 --> 00:03:05,675
-items that have quantity zero.
+商品の在庫がゼロの場合に。
 
 77
 00:03:05,675 --> 00:03:09,595
-So let's add a little span
-with the text, out of stock.
+なので span で囲まれたテキスト、
+out of stock を追加してみましょう
 
 78
 00:03:09,595 --> 00:03:13,334
-This should only appear if
-our item quantity equals zero.
+この表示は商品の在庫が
+セロのときにのみ表示されるべきですね。
 
 79
 00:03:13,334 --> 00:03:16,134
-We're going to use the v-if directive.
+これには v-if ディレクティブをつかいます
 
 80
 00:03:16,134 --> 00:03:20,362
-Because our jacket has quantity
-of zero, it's out of stock.
+こうすると jacket の在庫がゼロのときに
+out of stock のテキストが表示されます
 
 81
 00:03:20,362 --> 00:03:22,081
-What if we wanted to
-print out the total number
+次に、すべての商品の在庫数を
+表示させるとしたらどうでしょう＿
 
 82
 00:03:22,081 --> 00:03:24,641
-of products under our list?
+このリストの下に。
 
 83
 00:03:24,641 --> 00:03:26,468
-To make this work, we need to create
+これを実現するためにはただ＿
 
 84
 00:03:26,468 --> 00:03:29,570
-a computed property called totalProducts
+computed のプロパティに totalProducts を追加します
 
 85
 00:03:29,570 --> 00:03:34,228
-which returns the total
-quantity of our products.
+これはすべての商品の
+在庫数を返します。
 
 86
 00:03:34,228 --> 00:03:36,490
-If you're not familiar
-with JavaScript reduce,
+もし JavaScript の reduce 関数
+を知らなくても、
 
 87
 00:03:36,490 --> 00:03:40,468
-it's adding up all the
-quantities from each product.
+それぞれの商品の在庫を
+足し上げています。
 
 88
 00:03:40,468 --> 00:03:41,851
-As you can see, over in our browser,
+見ての通り、ブラウザ上では
 
 89
 00:03:41,851 --> 00:03:45,308
-it's properly adding
-up all the quantities.
+先程のプロパティが
+すべての商品の在庫数を追加しています。
 
 90
 00:03:45,308 --> 00:03:47,588
-Here in the browser, I
-want to show you Vue's
+ブラウザ上で実行できる
+Vue のツールをお見せしましょう。
 
 91
 00:03:47,588 --> 00:03:51,380
-Chrome plugin where we
-can see our array of data
+Chrome プラグインで
+先程定義したデータや＿
 
 92
 00:03:51,380 --> 00:03:53,547
-and inspect it right here.
+ここで詳しく調べられます。
 
 93
 00:03:55,108 --> 00:03:57,460
-Since we're in the console, just for fun,
+コンソール上でも、面白いことができます
 
 94
 00:03:57,460 --> 00:03:59,850
 let's pop the last item out of the array
+配列の最後にアイテムを追加してみましょう。
 
 95
 00:03:59,850 --> 00:04:01,828
 and see what happens.
+見てください。
 
 96
 00:04:01,828 --> 00:04:04,359
-As you can see, not only
-is our list updated,
+見ての通り、商品のリストが
+更新されただけではなく＿
 
 97
 00:04:04,359 --> 00:04:07,940
-but our total as well, as you would hope.
+合計も同様に更新されています。
 
 98
 00:04:07,940 --> 00:04:10,410
-Next, let's add some
-interactivity to this page
+次に、このページに
+動的な要素を追加してみましょう
 
 99
 00:04:10,410 --> 00:04:12,346
-through the use of a button.
+button を使った。
 
 100
 00:04:12,346 --> 00:04:14,490
-We'll create an add
-button for each product
+それぞれの商品に button 要素を
+追加してみましょう
 
 101
 00:04:14,490 --> 00:04:15,850
-and when a click occurs,
+そして、それがクリックされると＿
 
 102
 00:04:15,850 --> 00:04:18,850
-we'll increment the quantity by one.
+在庫数が１増えるようにしましょう。
 
 103
 00:04:19,959 --> 00:04:22,279
-Back in the browser, notice
-how when we add an item,
+ブラウザに戻って、
 
 104
 00:04:22,279 --> 00:04:25,159
-not only does the total
-inventory get updated,
+すべての在庫数が
+更新されただけでなく
 
 105
 00:04:25,159 --> 00:04:27,780
-but also if we increment
-our jacket product,
+例えば、jacket が
+追加されると
 
 106
 00:04:27,780 --> 00:04:30,300
-our out of stock notice goes away.
+out of stock というテキストが消えます。
 
 107
 00:04:30,300 --> 00:04:31,860
-Clicking this button a million times
+このボタンを百万回クリックするのは＿
 
 108
 00:04:31,860 --> 00:04:33,890
-is going to get tiring,
-so what if we wanted to
+とても疲れてしまうでしょうが、
+例えば、
 
 109
 00:04:33,890 --> 00:04:37,719
-write in the quantity of
-jackets or hiking socks?
+ジャケットやソックスの数量
+入力すればいいでしょうか？
 
 110
 00:04:37,719 --> 00:04:40,580
-We just create a new input
-field and bind it to our
+新しく input フィールドを追加します
 
 111
 00:04:40,580 --> 00:04:43,867
+商品の数量に紐付いた
 product quantity field
 with the v-model directive
 
@@ -499,90 +500,91 @@ specifying that it is always a number.
 
 113
 00:04:46,519 --> 00:04:48,060
+これで数量を入力できるようになりました。
 You'll notice now, I can input the total
 
 114
 00:04:48,060 --> 00:04:52,450
-quantity of each item and
-it gets updated immediately.
+それぞれ商品の数量は
+すぐに更新されます。
 
 115
 00:04:52,450 --> 00:04:54,500
-I can even set the quantity back to zero
+在庫数をゼロにすると
 
 116
 00:04:54,500 --> 00:04:57,899
-and I get my out of stock statement.
+out of stock というテキストも表示されます。
 
 117
 00:04:57,899 --> 00:05:01,232
-And my add buttons still work just fine.
+先程追加したボタンもうまく動きます
 
 118
 00:05:02,259 --> 00:05:03,999
+大きなアプリケーションを作る場合、
 If we were building a larger application,
 
 119
 00:05:03,999 --> 00:05:05,839
-we might want to split
-things up at this point
+ファイルを分割したいでしょう＿
 
 120
 00:05:05,839 --> 00:05:09,290
-into their own components and files.
+コンポーネントごとに
 
 121
 00:05:09,290 --> 00:05:11,827
-Vue even has a command line interface
+Vue は CLI を持っていて＿
 
 122
 00:05:11,827 --> 00:05:15,828
-which makes it simple to
-start real projects quickly.
+簡単に本番ですぐに使える
+プロジェクトを作成することができます。
 
 123
 00:05:15,828 --> 00:05:18,879
-We might even use single
-file Vue components
+Vue コンポーネントを
+ひとつのファイルで＿
 
 124
 00:05:18,879 --> 00:05:21,770
-which contain their own HTML, JavaScript,
+以下のものを含んだ。HTML と JavaScript_
 
 125
 00:05:21,770 --> 00:05:23,687
-and Scoped CSS, or SCSS.
+そして名前空間で閉じられた CSS もしくは SCSS
 
 126
 00:05:25,599 --> 00:05:28,926
-- Hi, I'm Evan You, the creator of Vue.js.
+ー Vue.js の作者の Evan You です。
 
 127
 00:05:28,926 --> 00:05:31,587
-What you've seen here
-barely scratched the surface
+この動画ではとても表面的な
+ものしか紹介していません＿
 
 128
 00:05:31,587 --> 00:05:33,065
-of what Vue can do.
+Vue ができることの。
 
 129
 00:05:33,065 --> 00:05:34,856
-There's so much more in the ecosystem
+エコシステムには、それ以外に多くのものがあります＿
 
 130
 00:05:34,856 --> 00:05:36,555
-to help you build, organize,
+以下のことを助けます。ビルド、まとめる_
 
 131
 00:05:36,555 --> 00:05:39,076
-and scale your frontend applications.
+そしてフロントエンドのアプリケーションをスケールさせるために。
 
 132
 00:05:39,076 --> 00:05:42,457
-To get a better taste, read
-our documentation today.
+より深く理解するために、
+ドキュメントを読んでみてください。
 
 133
 00:05:42,457 --> 00:05:44,708
-I think you'll enjoy the View.
+楽しめる思います。
